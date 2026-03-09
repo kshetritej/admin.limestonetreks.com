@@ -16,7 +16,26 @@ import {
 import { NavUtils } from "./nav-utils";
 import { TNavData } from "@/app/(dash)/types/navItems";
 import Link from "next/link";
-import { LucideCircle, LucideContact2, LucideCopyX, LucideForm, LucideGaugeCircle, LucideMapPinCheck, LucideMapPinHouse, LucideMountainSnow, LucideNewspaper, LucideNotebook, LucideNotebookPen, LucidePyramid, LucideRoute, LucideSettings2, LucideSquareActivity, LucideTag, LucideUsers2, SquareTerminal } from "lucide-react";
+import {
+  LucideCircle,
+  LucideContact2,
+  LucideCopyX,
+  LucideForm,
+  LucideGaugeCircle,
+  LucideMapPinCheck,
+  LucideMapPinHouse,
+  LucideMountainSnow,
+  LucideNewspaper,
+  LucideNotebook,
+  LucideNotebookPen,
+  LucidePyramid,
+  LucideRoute,
+  LucideSettings2,
+  LucideSquareActivity,
+  LucideTag,
+  LucideUsers2,
+  SquareTerminal,
+} from "lucide-react";
 import { siteDomain, siteName } from "@/app/config/siteConfig";
 
 const data: TNavData = {
@@ -102,11 +121,6 @@ const data: TNavData = {
   ],
   navSecondary: [
     {
-      title: "Settings",
-      url: "/settings",
-      icon: LucideSettings2,
-    },
-    {
       title: "Terms and Conditions",
       url: "/TERMS_AND_CONDITIONS",
       icon: LucideNewspaper,
@@ -119,26 +133,6 @@ const data: TNavData = {
     {
       title: "Cancellation Policy",
       url: "/CANCELLATION_POLICY",
-      icon: LucideNewspaper,
-    },
-    {
-      title: "Supplier Agreement",
-      url: "/SUPPLIER_AGREEMENT",
-      icon: LucideNewspaper,
-    },
-    {
-      title: "Community Guidelines",
-      url: "/COMMUNITY_GUIDELINES",
-      icon: LucideNewspaper,
-    },
-    {
-      title: "Platform Terms of Service",
-      url: "/PLATFORM_TERMS_OF_SERVICE",
-      icon: LucideNewspaper,
-    },
-    {
-      title: "Guest Terms and Conditions",
-      url: "/GUEST_TERMS_AND_CONDITIONS",
       icon: LucideNewspaper,
     },
   ],
@@ -156,9 +150,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             >
               <Link href="/">
                 <LucideCircle className="!size-5" />
-                <span className="text-base font-semibold">
-                  {siteName}
-                </span>
+                <span className="text-base font-semibold">{siteName}</span>
               </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
