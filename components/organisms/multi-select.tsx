@@ -56,10 +56,7 @@ export function MultiSelect({
           variant="outline"
           role="combobox"
           aria-expanded={open}
-          className={cn(
-            "w-full justify-between h-auto min-h-10",
-            className
-          )}
+          className={cn("w-full justify-between h-auto min-h-10", className)}
         >
           <div className="flex flex-wrap gap-1">
             {selected.length === 0 ? (
@@ -68,7 +65,7 @@ export function MultiSelect({
               selectedLabels.map((label, index) => (
                 <Badge
                   key={selected[index]}
-                  variant="secondary"
+                  variant="default"
                   className="mr-1"
                   onClick={(e) => {
                     e.stopPropagation();
@@ -98,7 +95,7 @@ export function MultiSelect({
                     "mr-2 h-4 w-4",
                     selected.includes(option.value)
                       ? "opacity-100"
-                      : "opacity-0"
+                      : "opacity-0",
                   )}
                 />
                 {option.label}

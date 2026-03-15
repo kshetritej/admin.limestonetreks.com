@@ -17,6 +17,7 @@ import { NavUtils } from "./nav-utils";
 import { TNavData } from "@/app/(dash)/types/navItems";
 import Link from "next/link";
 import {
+  Diamond,
   LucideCircle,
   LucideContact2,
   LucideCopyX,
@@ -30,11 +31,9 @@ import {
   LucideNotebookPen,
   LucidePyramid,
   LucideRoute,
-  LucideSettings2,
   LucideSquareActivity,
   LucideTag,
   LucideUsers2,
-  SquareTerminal,
 } from "lucide-react";
 import { siteDomain, siteName } from "@/app/config/siteConfig";
 
@@ -149,8 +148,10 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               className="data-[slot=sidebar-menu-button]:!p-1.5"
             >
               <Link href="/">
-                <LucideCircle className="!size-5" />
-                <span className="text-base font-semibold">{siteName}</span>
+                <div className="bg-primary p-1 text-white rounded-sm">
+                  <Diamond fill="white" />
+                </div>
+                <span className="text-xl font-bold">{siteName}</span>
               </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
