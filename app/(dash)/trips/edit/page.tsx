@@ -1231,7 +1231,7 @@ function TripForm() {
                   </Button>
                 </div>
               ) : (
-                <div className="size-54 bg-accent p-2 rounded-sm flex items-center justify-center cursor-pointer border-dotted border-2">
+                <div className="size-54 bg-background p-2 rounded-sm flex items-center justify-center cursor-pointer border-dotted border-2">
                   <LucideCloudUpload />
                 </div>
               )}

@@ -37,7 +37,7 @@ export function NavUtils({
                 asChild
                 className={clsx(
                   "flex items-center gap-2",
-                  isActive ? "bg-accent border text-white" : "",
+                  isActive ? "bg-background border text-white" : "",
                 )}
               >
                 <Link href={item.url}>

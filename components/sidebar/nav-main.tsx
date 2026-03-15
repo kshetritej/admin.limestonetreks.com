@@ -67,7 +67,7 @@ export function NavMain({
                     tooltip={item.title}
                     className={clsx(
                       "w-full flex items-center gap-2",
-                      isActive ? "bg-accent border text-white" : "",
+                      isActive ? "bg-background border text-white" : "",
                     )}
                   >
                     {item.icon && (
