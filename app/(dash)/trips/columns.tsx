@@ -53,7 +53,11 @@ export const columns: ColumnDef<any>[] = [
       return (
         <div>
           {row?.original?.thumbnail ? (
-            <img alt="" className="size-16 object-cover" src={getFullImageUrl(row?.original?.thumbnail)} />
+            <img
+              alt=""
+              className="size-16 object-cover"
+              src={getFullImageUrl(row?.original?.thumbnail)}
+            />
           ) : (
             <div className="size-16 border"> </div>
           )}
