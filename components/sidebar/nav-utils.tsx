@@ -37,15 +37,12 @@ export function NavUtils({
                 asChild
                 className={clsx(
                   "flex items-center gap-2",
-                  isActive ? "bg-accent border text-primary" : ""
+                  isActive ? "bg-accent border text-white" : "",
                 )}
               >
                 <Link href={item.url}>
                   <item.icon
-                    className={clsx(
-                      "size-4",
-                      isActive ? "text-primary" : ""
-                    )}
+                    className={clsx("size-4", isActive ? "text-white" : "")}
                   />
                   <span>{item.name}</span>
                 </Link>

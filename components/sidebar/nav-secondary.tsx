@@ -37,7 +37,7 @@ export function NavSecondary({
                   asChild
                   className={clsx(
                     "w-full flex items-center gap-2",
-                    isActive ? "bg-accent border text-primary" : ""
+                    isActive ? "bg-accent border text-white" : "",
                   )}
                 >
                   <Link href={item.url}>
