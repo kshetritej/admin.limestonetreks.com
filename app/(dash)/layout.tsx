@@ -16,9 +16,9 @@ const AdminDashboardLayout = async ({
     cookieStore.get("admin_auth_token")?.value ||
     cookieStore.get("admin_token")?.value;
 
-  // if (!adminCookie) {
-  //   redirect("/admin");
-  // }
+  if (!adminCookie) {
+    redirect("/admin");
+  }
 
   return (
     <SidebarProvider
