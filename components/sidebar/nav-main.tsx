@@ -67,12 +67,12 @@ export function NavMain({
                     tooltip={item.title}
                     className={clsx(
                       "w-full flex items-center gap-2",
-                      isActive ? "bg-background border text-white" : "",
+                      isActive ? "bg-background border " : "",
                     )}
                   >
                     {item.icon && (
                       <item.icon
-                        className={clsx("size-4", isActive ? "text-white" : "")}
+                        className={clsx("size-4", isActive ? "" : "")}
                       />
                     )}
                     <span>{item.title}</span>

@@ -37,13 +37,11 @@ export function NavUtils({
                 asChild
                 className={clsx(
                   "flex items-center gap-2",
-                  isActive ? "bg-background border text-white" : "",
+                  isActive ? "bg-background border " : "",
                 )}
               >
                 <Link href={item.url}>
-                  <item.icon
-                    className={clsx("size-4", isActive ? "text-white" : "")}
-                  />
+                  <item.icon className={clsx("size-4", isActive ? "" : "")} />
                   <span>{item.name}</span>
                 </Link>
               </SidebarMenuButton>

@@ -18,7 +18,6 @@ import { TNavData } from "@/app/(dash)/types/navItems";
 import Link from "next/link";
 import {
   Diamond,
-  LucideCircle,
   LucideContact2,
   LucideCopyX,
   LucideForm,
@@ -148,7 +147,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               className="data-[slot=sidebar-menu-button]:!p-1.5"
             >
               <Link href="/">
-                <div className="bg-primary p-1 text-white rounded-sm">
+                <div className="bg-primary p-1  rounded-sm">
                   <Diamond fill="white" />
                 </div>
                 <span className="text-xl font-bold">{siteName}</span>
