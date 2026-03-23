@@ -445,7 +445,7 @@ function TripForm() {
       );
 
       if (!editId) reset();
-      router.push("/trips");
+      router.back();
     } catch (err) {
       toast.error((err as any)?.message || "Submission failed");
       console.error(err);
