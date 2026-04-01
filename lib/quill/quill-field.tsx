@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import { Controller } from "react-hook-form";
 import { useMemo, useRef } from "react";
 import { createQuillModules } from "./quillModules";
+import { stripStyles } from "../stripStyles";
 
 const ReactQuill = dynamic(() => import("react-quill-new"), { ssr: false });
 
@@ -29,13 +30,12 @@ export function QuillField({
       name={name}
       control={control}
       render={({ field }) => (
-
         <ReactQuill
-        // @ts-expect-error ignoring
+          // @ts-expect-error ignoring
           ref={quillRef}
           theme="snow"
           value={field.value || ""}
-          onChange={field.onChange}
+          onChange={(value) => field.onChange(stripStyles(value))}
           placeholder={placeholder}
           modules={modules}
           className={`min-h-[${minHeight}px]`}

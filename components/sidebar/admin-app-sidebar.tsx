@@ -18,6 +18,7 @@ import { TNavData } from "@/app/(dash)/types/navItems";
 import Link from "next/link";
 import {
   Diamond,
+  LucideArrowRight,
   LucideContact2,
   LucideCopyX,
   LucideForm,
@@ -72,6 +73,11 @@ const data: TNavData = {
       title: "Navigation",
       url: "/navigation",
       icon: LucideRoute,
+    },
+    {
+      title: "Redirects",
+      url: "/redirects",
+      icon: LucideArrowRight,
     },
   ],
 
